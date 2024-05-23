@@ -96,6 +96,8 @@ const convertRomanToInteger = function(roman) {
   response.value = sum;
   response.result = true;
 
+  gtag('event', 'romanToInteger', { 'integerNumber': response});
+
   return response;
 };
 
@@ -156,6 +158,8 @@ const convertIntegerToRoman = function(num) {
 
   response.value = str;
   response.result = true;
+
+  gtag('event', 'integerToRoman', { 'romanNumber': response});
 
   return response;
 };
